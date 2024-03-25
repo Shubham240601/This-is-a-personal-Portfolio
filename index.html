@@ -7,6 +7,163 @@
     <link rel="stylesheet" href="shubham.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif !important;
+            font-size: 18px; /* Increased font size */
+            line-height: 2em;
+            color: black; /* Changed text color to black */
+            font-weight: 400;
+            background: white;
+        }
+
+        h1, h2, h3, h4, h5 {
+            margin: 0 0 15px;
+        }
+
+        p {
+            margin-bottom: 20px !important;
+        }
+
+        .columns-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .left-col-block {
+            width: 50%;
+            text-align: center;
+            overflow: hidden;
+            position: fixed;
+            left: 0;
+        }
+
+        .right-col-block {
+            width: 50%;
+            position: absolute;
+            right: 0;
+            left: 52%;
+        }
+
+        @media(max-width: 600px) {
+            .left-col-block {
+                width: 100%;
+                position: relative;
+            }
+        }
+
+        .header {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        .header .profile-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-image: url(photo.jpg); /* Replace 'photo.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header .profile-image:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(-30deg, rgba(42, 84, 250, 0.5) 0%, rgba(42, 84, 250, 0.5) 20%, transparent 30%, transparent 100%);
+        }
+
+        .header .content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10%;
+        }
+
+        .header .content h1 {
+            font-size: 36px;
+            color: white;
+            line-height: 1;
+            margin: 0;
+        }
+
+        .header .content p {
+            font-size: 20px;
+            color: white;
+        }
+
+        .header .content .social {
+            margin: 0;
+            display: block;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .header .content .social li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .header .content .social li a {
+            display: block;
+            font-size: 15px;
+            width: 35px;
+            height: 35px;
+            background-color: white;
+            border-radius: 100%;
+            line-height: 35px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .section-wrapper {
+            padding-top: 50px;
+        }
+
+        .section-title {
+            margin-bottom: 15px;
+            margin-top: 0 px;
+        }
+
+        .gray-bg {
+            background: gray;
+        }
+
+        .expertise_item {
+            margin-bottom: 20px;
+        }
+
+        .expertise_item h3 {
+            margin-bottom: 5 px;
+            color: #333;
+            font-weight: 700;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .section-wrapperclass {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
 <div id="Main-Wrapper">
@@ -17,14 +174,10 @@
                     <h1>Hi, I'm Shubham Waghchaure</h1>
                     <p class="lead">Full Stack Web Developer</p>
                     <ul class="social">
-                        <li><a href="https://www.facebook.com/shubham.waghchaure.545/"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/shubhamwaghchaure2406/"><i class="fab fa-instagram"></i></a></li>
-<<<<<<< HEAD
-                        <li><a href=https://wa.me/+917720096256><i class="fab fa-whatsapp"></i></a></li>
-=======
-                        <li><a href="https://wa.me/+917720096256"><i class="fab fa-whatsapp"></i></a></li>
->>>>>>> b3a89a85610d3e944db95e60374b9af94d4b8283
-                        <li><a href="https://www.linkedin.com/in/shubham-waghchaure-9b2bb0246"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/shubham.waghchaure.545/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/shubhamwaghchaure2406/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=https://wa.me/+917720096256><i class="fab fa-whatsapp" target="_blank"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/shubham-waghchaure-9b2bb0246" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
                 <div class="profile-image"></div>
@@ -70,7 +223,7 @@
                     <ul>
                         <li>
                             <p><strong>Bachelor of Engineering in Mechanical Engineering</strong>
-                                <br>Guru Gobind Singh College of Engineering and Research Center, Nashik, 2022<br><strong>CGPA: 9.18</strong></p>
+                                <br>Guru Gobind Singh College of Engineering and Research Center, Nashik, 2022<br><strong>Percentage:- 86.5 %</strong></p>
                         </li>
                     </ul>
                     <ul>
@@ -222,3 +375,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
+
